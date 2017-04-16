@@ -1,23 +1,14 @@
 
 // picture courtesy http://wallpaper-gallery.net/wallpapers/free-dark-wallpaper.html
 
-var images = [];
-function preload() {
-    for (i = 0, length = preload.arguments; i < length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-
 $(document).ready(
     function(){
 
-        preload(
-            "./img/1.jpg",
-            "./img/2.jpg",
-            "./img/3.jpg",
-            "./img/4.jpg"
-        );
+        // preload images
+        (new Image()).src = './img/1.jpg';
+        (new Image()).src = './img/2.jpg';
+        (new Image()).src = './img/3.jpg';
+        (new Image()).src = './img/4.jpg';
 
 
         $('.card.card_graphic').hover(
